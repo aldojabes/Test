@@ -29,7 +29,7 @@ function App() {
     const input = e.target.value;
     // Check if input is a number
     if (/^\d*$/.test(input) || input === "") {
-      setPhoneNumber("+250" + input);
+      setPhoneNumber(input);
     }
   };
 
@@ -326,8 +326,9 @@ function App() {
                   type="tel"
                   className="form-control"
                   value={phoneNumber}
+                  maxLength={10}
                   onChange={handlePhoneNumberChange}
-                  placeholder="78123-----"
+                  placeholder="enter phone number"
                 />
               </div>
             </div>

@@ -108,7 +108,7 @@ app.post("/submit-form", (req, res) => {
 
   const mailOptions = {
     from: "aldojabes@gmail.com",
-    to: "burigoj2@irembo.com",
+    to: "burigoj2@gmail.com",
     subject: "Form Submission Details",
     html: emailMessage,
   };
